@@ -13,10 +13,10 @@ namespace Esoft_Project
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class eSoftEntities : DbContext
+    public partial class eSoftEntities1 : DbContext
     {
-        public eSoftEntities()
-            : base("name=eSoftEntities")
+        public eSoftEntities1()
+            : base("name=eSoftEntities1")
         {
         }
     
@@ -25,5 +25,6 @@ namespace Esoft_Project
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<ClientsSet> ClientsSet { get; set; }
     }
 }
