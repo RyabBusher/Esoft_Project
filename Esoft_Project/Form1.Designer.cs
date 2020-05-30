@@ -69,7 +69,7 @@
             this.buttonOpenAgents.Text = "Риелторы";
             this.buttonOpenAgents.UseCompatibleTextRendering = true;
             this.buttonOpenAgents.UseVisualStyleBackColor = true;
-            this.buttonOpenAgents.Click += new System.EventHandler(this.button1_Click);
+            this.buttonOpenAgents.Click += new System.EventHandler(this.buttonAgents_Click);
             // 
             // buttonOpenRealestates
             // 
@@ -80,6 +80,7 @@
             this.buttonOpenRealestates.Text = "Объекты недвижимости";
             this.buttonOpenRealestates.UseCompatibleTextRendering = true;
             this.buttonOpenRealestates.UseVisualStyleBackColor = true;
+            this.buttonOpenRealestates.Click += new System.EventHandler(this.buttonOpenRealestates_Click);
             // 
             // buttonOpenDemands
             // 

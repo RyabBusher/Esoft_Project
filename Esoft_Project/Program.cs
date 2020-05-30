@@ -8,7 +8,7 @@ namespace Esoft_Project
 {
     static class Program
     {
-        public static eSoftEntities0 eSoftDB = new eSoftEntities0();
+        public static eSoftEntities111 eSoftDB = new eSoftEntities111();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
