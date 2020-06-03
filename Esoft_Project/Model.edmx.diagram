@@ -4,10 +4,19 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d524a7322b5e45e8b56378d001b26dd7" Name="Diagram1">
-        <EntityTypeShape EntityType="eSoftModel.AgentsSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="eSoftModel.ClientsSet" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="eSoftModel.RealEstateSet" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+      <Diagram DiagramId="222cbe29ce27412aa892b4964b7ef3b6" Name="Diagram1">
+        <EntityTypeShape EntityType="eSoftModel.AgentsSet" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eSoftModel.ClientsSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eSoftModel.DemandSet" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="eSoftModel.RealEstateSet" Width="1.5" PointX="3.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eSoftModel.SupplySet" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eSoftModel.Users" Width="1.5" PointX="5.75" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="eSoftModel.FK_AgentsSet_AgentsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="eSoftModel.FK_DemandSet_AgentsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="eSoftModel.FK_SupplySet_AgentsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="eSoftModel.FK_DemandSet_ClientsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="eSoftModel.FK_SupplySet_ClientsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="eSoftModel.FK_SupplySet_RealEstateSet" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

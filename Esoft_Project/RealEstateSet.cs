@@ -14,6 +14,12 @@ namespace Esoft_Project
     
     public partial class RealEstateSet
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public RealEstateSet()
+        {
+            this.SupplySet = new HashSet<SupplySet>();
+        }
+    
         public int Id { get; set; }
         public string Adress_City { get; set; }
         public string Adress_Street { get; set; }
@@ -26,5 +32,8 @@ namespace Esoft_Project
         public Nullable<int> TotalFloors { get; set; }
         public Nullable<int> Rooms { get; set; }
         public Nullable<int> Floor { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SupplySet> SupplySet { get; set; }
     }
 }
