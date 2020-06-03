@@ -50,13 +50,6 @@
             this.labelFloor = new System.Windows.Forms.Label();
             this.labelTotalFloors = new System.Windows.Forms.Label();
             this.listViewRealEstateSet_Apartment = new System.Windows.Forms.ListView();
-            this.listViewRealEstateSet_Land = new System.Windows.Forms.ListView();
-            this.listViewRealEstateSet_House = new System.Windows.Forms.ListView();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.buttonEdit = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.comboBoxType = new System.Windows.Forms.ComboBox();
-            this.labelType = new System.Windows.Forms.Label();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -66,13 +59,7 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listViewRealEstateSet_Land = new System.Windows.Forms.ListView();
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -81,6 +68,19 @@
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listViewRealEstateSet_House = new System.Windows.Forms.ListView();
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.comboBoxType = new System.Windows.Forms.ComboBox();
+            this.labelType = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -272,6 +272,42 @@
             this.listViewRealEstateSet_Apartment.View = System.Windows.Forms.View.Details;
             this.listViewRealEstateSet_Apartment.SelectedIndexChanged += new System.EventHandler(this.listViewRealEstateSet_Apartment_SelectedIndexChanged);
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Город";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Улица";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Номер дома";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Номер квартиры";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Широта";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Долгота";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Площадь";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Кол-во комнат";
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Этаж";
+            // 
             // listViewRealEstateSet_Land
             // 
             this.listViewRealEstateSet_Land.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -296,6 +332,38 @@
             this.listViewRealEstateSet_Land.Visible = false;
             this.listViewRealEstateSet_Land.SelectedIndexChanged += new System.EventHandler(this.listViewRealEstateSet_Land_SelectedIndexChanged);
             // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Город";
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Улица";
+            // 
+            // columnHeader19
+            // 
+            this.columnHeader19.Text = "Номер дома";
+            // 
+            // columnHeader20
+            // 
+            this.columnHeader20.Text = "Номер квартиры";
+            // 
+            // columnHeader21
+            // 
+            this.columnHeader21.Text = "Широта";
+            // 
+            // columnHeader22
+            // 
+            this.columnHeader22.Text = "Долгота";
+            // 
+            // columnHeader23
+            // 
+            this.columnHeader23.Text = "Площадь";
+            // 
+            // columnHeader24
+            // 
+            this.columnHeader24.Text = "Кол-во этажей";
+            // 
             // listViewRealEstateSet_House
             // 
             this.listViewRealEstateSet_House.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -318,6 +386,34 @@
             this.listViewRealEstateSet_House.View = System.Windows.Forms.View.Details;
             this.listViewRealEstateSet_House.Visible = false;
             this.listViewRealEstateSet_House.SelectedIndexChanged += new System.EventHandler(this.listViewRealEstateSet_House_SelectedIndexChanged);
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Город";
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Улица";
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Номер дома";
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Номер квартиры";
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Широта";
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Долгота";
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Площадь";
             // 
             // buttonAdd
             // 
@@ -371,108 +467,12 @@
             this.labelType.TabIndex = 27;
             this.labelType.Text = "Тип объекта недвижимости";
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Город";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Улица";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Номер дома";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Номер квартиры";
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Широта";
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Долгота";
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Площадь";
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Кол-во комнат";
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Этаж";
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Город";
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Улица";
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Номер дома";
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "Номер квартиры";
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "Широта";
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "Долгота";
-            // 
-            // columnHeader16
-            // 
-            this.columnHeader16.Text = "Площадь";
-            // 
-            // columnHeader17
-            // 
-            this.columnHeader17.Text = "Город";
-            // 
-            // columnHeader18
-            // 
-            this.columnHeader18.Text = "Улица";
-            // 
-            // columnHeader19
-            // 
-            this.columnHeader19.Text = "Номер дома";
-            // 
-            // columnHeader20
-            // 
-            this.columnHeader20.Text = "Номер квартиры";
-            // 
-            // columnHeader21
-            // 
-            this.columnHeader21.Text = "Широта";
-            // 
-            // columnHeader22
-            // 
-            this.columnHeader22.Text = "Долгота";
-            // 
-            // columnHeader23
-            // 
-            this.columnHeader23.Text = "Площадь";
-            // 
-            // columnHeader24
-            // 
-            this.columnHeader24.Text = "Кол-во этажей";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(269, 82);
+            this.pictureBox1.Size = new System.Drawing.Size(269, 98);
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -482,7 +482,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 552);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelType);
             this.Controls.Add(this.comboBoxType);
             this.Controls.Add(this.buttonDelete);
@@ -511,6 +510,7 @@
             this.Controls.Add(this.textBoxAdress_House);
             this.Controls.Add(this.textBoxAdress_Street);
             this.Controls.Add(this.textBoxAdress_City);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormRealEstate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Объекты недвижимости";

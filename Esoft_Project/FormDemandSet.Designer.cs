@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDemandSet));
             this.comboBoxAgent = new System.Windows.Forms.ComboBox();
             this.comboBoxClient = new System.Windows.Forms.ComboBox();
             this.textBoxMinPrice = new System.Windows.Forms.TextBox();
@@ -89,6 +90,8 @@
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxAgent
@@ -508,6 +511,15 @@
             // 
             this.columnHeader20.Text = "Макс.Площадь";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(372, 105);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormDemandSet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -540,9 +552,11 @@
             this.Controls.Add(this.comboBoxAgent);
             this.Controls.Add(this.listViewLands);
             this.Controls.Add(this.listViewHouse);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormDemandSet";
             this.Text = "Предложения";
             this.Load += new System.EventHandler(this.FormDemandSet_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -610,5 +624,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.ColumnHeader columnHeader19;
         private System.Windows.Forms.ColumnHeader columnHeader20;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

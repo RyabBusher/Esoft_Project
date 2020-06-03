@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgent));
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.textBoxMiddleName = new System.Windows.Forms.TextBox();
             this.textBoxComission = new System.Windows.Forms.TextBox();
@@ -37,14 +38,16 @@
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelComission = new System.Windows.Forms.Label();
             this.listViewAgent = new System.Windows.Forms.ListView();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.buttonEdit = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
             this.columnHeaderID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderFirstName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderMiddleName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderLastName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderComission = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxFirstName
@@ -133,6 +136,26 @@
             this.listViewAgent.View = System.Windows.Forms.View.Details;
             this.listViewAgent.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
+            // columnHeaderID
+            // 
+            this.columnHeaderID.Text = "ID";
+            // 
+            // columnHeaderFirstName
+            // 
+            this.columnHeaderFirstName.Text = "Имя";
+            // 
+            // columnHeaderMiddleName
+            // 
+            this.columnHeaderMiddleName.Text = "Отчество";
+            // 
+            // columnHeaderLastName
+            // 
+            this.columnHeaderLastName.Text = "Фамилия";
+            // 
+            // columnHeaderComission
+            // 
+            this.columnHeaderComission.Text = "Доля от комиссии";
+            // 
             // buttonAdd
             // 
             this.buttonAdd.Location = new System.Drawing.Point(531, 398);
@@ -141,7 +164,7 @@
             this.buttonAdd.TabIndex = 9;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonEdit
             // 
@@ -163,31 +186,22 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.button3_Delete);
             // 
-            // columnHeaderID
+            // pictureBox1
             // 
-            this.columnHeaderID.Text = "ID";
-            // 
-            // columnHeaderFirstName
-            // 
-            this.columnHeaderFirstName.Text = "Имя";
-            // 
-            // columnHeaderMiddleName
-            // 
-            this.columnHeaderMiddleName.Text = "Отчество";
-            // 
-            // columnHeaderLastName
-            // 
-            this.columnHeaderLastName.Text = "Фамилия";
-            // 
-            // columnHeaderComission
-            // 
-            this.columnHeaderComission.Text = "Доля от комиссии";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(283, 98);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FormAgent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
@@ -203,6 +217,7 @@
             this.Name = "FormAgent";
             this.Text = "FormAgent";
             this.Load += new System.EventHandler(this.FormAgent_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,5 +242,6 @@
         private System.Windows.Forms.ColumnHeader columnHeaderMiddleName;
         private System.Windows.Forms.ColumnHeader columnHeaderLastName;
         private System.Windows.Forms.ColumnHeader columnHeaderComission;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

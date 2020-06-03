@@ -43,7 +43,7 @@ namespace Esoft_Project
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAdd_Click(object sender, EventArgs e)
         {
             AgentsSet agentSet = new AgentsSet();
             agentSet.FirstName = textBoxFirstName.Text;
@@ -127,6 +127,11 @@ namespace Esoft_Project
                     ShowAgents();
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
